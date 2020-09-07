@@ -1,0 +1,626 @@
+00:24:32.530 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+00:24:34.440 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > GET https://samples.openweathermap.org/data/2.5/history/city?q=London%2CUK&appid=appid
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: samples.openweathermap.org
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_191)
+
+00:24:35.868 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1423.83
+1 < 200
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 07 Sep 2020 18:54:35 GMT
+1 < ETag: W/"a05a608676943f92506d1d6efab3d72e"
+1 < Server: openresty/1.9.7.1
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Request-Id: 661184d8-c097-46c6-aae9-bd5e76f13fef
+1 < X-Runtime: 0.001363
+1 < X-XSS-Protection: 1; mode=block
+{"message":"","cod":"200","city_id":2643743,"calctime":0.0875,"cnt":3,"list":[{"main":{"temp":279.946,"temp_min":279.946,"temp_max":279.946,"pressure":1016.76,"sea_level":1024.45,"grnd_level":1016.76,"humidity":100},"wind":{"speed":4.59,"deg":163.001},"clouds":{"all":92},"weather":[{"id":500,"main":"Rain","description":"light rain","icon":"10n"}],"rain":{"3h":2.69},"dt":1485717216},{"main":{"temp":282.597,"temp_min":282.597,"temp_max":282.597,"pressure":1012.12,"sea_level":1019.71,"grnd_level":1012.12,"humidity":98},"wind":{"speed":4.04,"deg":226},"clouds":{"all":92},"weather":[{"id":500,"main":"Rain","description":"light rain","icon":"10n"}],"rain":{"3h":0.405},"dt":1485745061},{"main":{"temp":279.38,"pressure":1011,"humidity":93,"temp_min":278.15,"temp_max":280.15},"wind":{"speed":2.6,"deg":30},"clouds":{"all":90},"weather":[{"id":701,"main":"Mist","description":"mist","icon":"50d"},{"id":741,"main":"Fog","description":"fog","icon":"50d"}],"dt":1485768552}]}
+
+00:24:35.922 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] {
+  "calctime": 0.0875,
+  "cnt": 3,
+  "cod": "200",
+  "message": "",
+  "list": [
+    {
+      "dt": 1485717216,
+      "rain": {
+        "3h": 2.69
+      },
+      "weather": [
+        {
+          "icon": "10n",
+          "description": "light rain",
+          "main": "Rain",
+          "id": 500
+        }
+      ],
+      "main": {
+        "temp": 279.946,
+        "temp_min": 279.946,
+        "grnd_level": 1016.76,
+        "humidity": 100,
+        "pressure": 1016.76,
+        "sea_level": 1024.45,
+        "temp_max": 279.946
+      },
+      "clouds": {
+        "all": 92
+      },
+      "wind": {
+        "deg": 163.001,
+        "speed": 4.59
+      }
+    },
+    {
+      "dt": 1485745061,
+      "rain": {
+        "3h": 0.405
+      },
+      "weather": [
+        {
+          "icon": "10n",
+          "description": "light rain",
+          "main": "Rain",
+          "id": 500
+        }
+      ],
+      "main": {
+        "temp": 282.597,
+        "temp_min": 282.597,
+        "grnd_level": 1012.12,
+        "humidity": 98,
+        "pressure": 1012.12,
+        "sea_level": 1019.71,
+        "temp_max": 282.597
+      },
+      "clouds": {
+        "all": 92
+      },
+      "wind": {
+        "deg": 226,
+        "speed": 4.04
+      }
+    },
+    {
+      "dt": 1485768552,
+      "weather": [
+        {
+          "icon": "50d",
+          "description": "mist",
+          "main": "Mist",
+          "id": 701
+        },
+        {
+          "icon": "50d",
+          "description": "fog",
+          "main": "Fog",
+          "id": 741
+        }
+      ],
+      "main": {
+        "temp": 279.38,
+        "temp_min": 278.15,
+        "humidity": 93,
+        "pressure": 1011,
+        "temp_max": 280.15
+      },
+      "clouds": {
+        "all": 90
+      },
+      "wind": {
+        "deg": 30,
+        "speed": 2.6
+      }
+    }
+  ],
+  "city_id": 2643743
+}
+
+00:24:36.153 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 1 of 1: src/test/java/interactions/api/weather.feature
+00:24:47.369 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+00:24:48.490 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > GET https://samples.openweathermap.org/data/2.5/history/city?q=London%2CUK&appid=appid
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: samples.openweathermap.org
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_191)
+
+00:24:49.776 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1282.64
+1 < 200
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 07 Sep 2020 18:54:49 GMT
+1 < ETag: W/"a05a608676943f92506d1d6efab3d72e"
+1 < Server: openresty/1.9.7.1
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Request-Id: 05df566c-bd4c-432d-b674-8c714d00ab7b
+1 < X-Runtime: 0.001103
+1 < X-XSS-Protection: 1; mode=block
+{"message":"","cod":"200","city_id":2643743,"calctime":0.0875,"cnt":3,"list":[{"main":{"temp":279.946,"temp_min":279.946,"temp_max":279.946,"pressure":1016.76,"sea_level":1024.45,"grnd_level":1016.76,"humidity":100},"wind":{"speed":4.59,"deg":163.001},"clouds":{"all":92},"weather":[{"id":500,"main":"Rain","description":"light rain","icon":"10n"}],"rain":{"3h":2.69},"dt":1485717216},{"main":{"temp":282.597,"temp_min":282.597,"temp_max":282.597,"pressure":1012.12,"sea_level":1019.71,"grnd_level":1012.12,"humidity":98},"wind":{"speed":4.04,"deg":226},"clouds":{"all":92},"weather":[{"id":500,"main":"Rain","description":"light rain","icon":"10n"}],"rain":{"3h":0.405},"dt":1485745061},{"main":{"temp":279.38,"pressure":1011,"humidity":93,"temp_min":278.15,"temp_max":280.15},"wind":{"speed":2.6,"deg":30},"clouds":{"all":90},"weather":[{"id":701,"main":"Mist","description":"mist","icon":"50d"},{"id":741,"main":"Fog","description":"fog","icon":"50d"}],"dt":1485768552}]}
+
+00:24:49.779 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] {
+  "calctime": 0.0875,
+  "cnt": 3,
+  "cod": "200",
+  "message": "",
+  "list": [
+    {
+      "dt": 1485717216,
+      "rain": {
+        "3h": 2.69
+      },
+      "weather": [
+        {
+          "icon": "10n",
+          "description": "light rain",
+          "main": "Rain",
+          "id": 500
+        }
+      ],
+      "main": {
+        "temp": 279.946,
+        "temp_min": 279.946,
+        "grnd_level": 1016.76,
+        "humidity": 100,
+        "pressure": 1016.76,
+        "sea_level": 1024.45,
+        "temp_max": 279.946
+      },
+      "clouds": {
+        "all": 92
+      },
+      "wind": {
+        "deg": 163.001,
+        "speed": 4.59
+      }
+    },
+    {
+      "dt": 1485745061,
+      "rain": {
+        "3h": 0.405
+      },
+      "weather": [
+        {
+          "icon": "10n",
+          "description": "light rain",
+          "main": "Rain",
+          "id": 500
+        }
+      ],
+      "main": {
+        "temp": 282.597,
+        "temp_min": 282.597,
+        "grnd_level": 1012.12,
+        "humidity": 98,
+        "pressure": 1012.12,
+        "sea_level": 1019.71,
+        "temp_max": 282.597
+      },
+      "clouds": {
+        "all": 92
+      },
+      "wind": {
+        "deg": 226,
+        "speed": 4.04
+      }
+    },
+    {
+      "dt": 1485768552,
+      "weather": [
+        {
+          "icon": "50d",
+          "description": "mist",
+          "main": "Mist",
+          "id": 701
+        },
+        {
+          "icon": "50d",
+          "description": "fog",
+          "main": "Fog",
+          "id": 741
+        }
+      ],
+      "main": {
+        "temp": 279.38,
+        "temp_min": 278.15,
+        "humidity": 93,
+        "pressure": 1011,
+        "temp_max": 280.15
+      },
+      "clouds": {
+        "all": 90
+      },
+      "wind": {
+        "deg": 30,
+        "speed": 2.6
+      }
+    }
+  ],
+  "city_id": 2643743
+}
+
+00:24:49.922 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 1 of 1: classpath:interactions/api/weather.feature
+00:24:51.224 [main] DEBUG com.intuit.karate - request:
+1 > GET https://samples.openweathermap.org/data/2.5/history/city?q=London%2CUK&appid=appid
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: samples.openweathermap.org
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_191)
+
+00:24:52.451 [main] DEBUG com.intuit.karate - response time in milliseconds: 1226.51
+1 < 200
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 07 Sep 2020 18:54:51 GMT
+1 < ETag: W/"a05a608676943f92506d1d6efab3d72e"
+1 < Server: openresty/1.9.7.1
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Request-Id: 91e5c0f3-deb7-406d-906c-1b67df835ef5
+1 < X-Runtime: 0.001312
+1 < X-XSS-Protection: 1; mode=block
+{"message":"","cod":"200","city_id":2643743,"calctime":0.0875,"cnt":3,"list":[{"main":{"temp":279.946,"temp_min":279.946,"temp_max":279.946,"pressure":1016.76,"sea_level":1024.45,"grnd_level":1016.76,"humidity":100},"wind":{"speed":4.59,"deg":163.001},"clouds":{"all":92},"weather":[{"id":500,"main":"Rain","description":"light rain","icon":"10n"}],"rain":{"3h":2.69},"dt":1485717216},{"main":{"temp":282.597,"temp_min":282.597,"temp_max":282.597,"pressure":1012.12,"sea_level":1019.71,"grnd_level":1012.12,"humidity":98},"wind":{"speed":4.04,"deg":226},"clouds":{"all":92},"weather":[{"id":500,"main":"Rain","description":"light rain","icon":"10n"}],"rain":{"3h":0.405},"dt":1485745061},{"main":{"temp":279.38,"pressure":1011,"humidity":93,"temp_min":278.15,"temp_max":280.15},"wind":{"speed":2.6,"deg":30},"clouds":{"all":90},"weather":[{"id":701,"main":"Mist","description":"mist","icon":"50d"},{"id":741,"main":"Fog","description":"fog","icon":"50d"}],"dt":1485768552}]}
+
+00:24:52.455 [main] INFO  com.intuit.karate - [print] {
+  "calctime": 0.0875,
+  "cnt": 3,
+  "cod": "200",
+  "message": "",
+  "list": [
+    {
+      "dt": 1485717216,
+      "rain": {
+        "3h": 2.69
+      },
+      "weather": [
+        {
+          "icon": "10n",
+          "description": "light rain",
+          "main": "Rain",
+          "id": 500
+        }
+      ],
+      "main": {
+        "temp": 279.946,
+        "temp_min": 279.946,
+        "grnd_level": 1016.76,
+        "humidity": 100,
+        "pressure": 1016.76,
+        "sea_level": 1024.45,
+        "temp_max": 279.946
+      },
+      "clouds": {
+        "all": 92
+      },
+      "wind": {
+        "deg": 163.001,
+        "speed": 4.59
+      }
+    },
+    {
+      "dt": 1485745061,
+      "rain": {
+        "3h": 0.405
+      },
+      "weather": [
+        {
+          "icon": "10n",
+          "description": "light rain",
+          "main": "Rain",
+          "id": 500
+        }
+      ],
+      "main": {
+        "temp": 282.597,
+        "temp_min": 282.597,
+        "grnd_level": 1012.12,
+        "humidity": 98,
+        "pressure": 1012.12,
+        "sea_level": 1019.71,
+        "temp_max": 282.597
+      },
+      "clouds": {
+        "all": 92
+      },
+      "wind": {
+        "deg": 226,
+        "speed": 4.04
+      }
+    },
+    {
+      "dt": 1485768552,
+      "weather": [
+        {
+          "icon": "50d",
+          "description": "mist",
+          "main": "Mist",
+          "id": 701
+        },
+        {
+          "icon": "50d",
+          "description": "fog",
+          "main": "Fog",
+          "id": 741
+        }
+      ],
+      "main": {
+        "temp": 279.38,
+        "temp_min": 278.15,
+        "humidity": 93,
+        "pressure": 1011,
+        "temp_max": 280.15
+      },
+      "clouds": {
+        "all": 90
+      },
+      "wind": {
+        "deg": 30,
+        "speed": 2.6
+      }
+    }
+  ],
+  "city_id": 2643743
+}
+
+00:26:11.017 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+00:26:12.148 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > GET https://samples.openweathermap.org/data/2.5/history/city?q=London%2CUK&appid=appid
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: samples.openweathermap.org
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_191)
+
+00:26:13.751 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 1505.09
+1 < 200
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 07 Sep 2020 18:56:13 GMT
+1 < ETag: W/"a05a608676943f92506d1d6efab3d72e"
+1 < Server: openresty/1.9.7.1
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Request-Id: 792e0c4a-bc78-4f3a-aa0c-b618871edd31
+1 < X-Runtime: 0.000996
+1 < X-XSS-Protection: 1; mode=block
+{"message":"","cod":"200","city_id":2643743,"calctime":0.0875,"cnt":3,"list":[{"main":{"temp":279.946,"temp_min":279.946,"temp_max":279.946,"pressure":1016.76,"sea_level":1024.45,"grnd_level":1016.76,"humidity":100},"wind":{"speed":4.59,"deg":163.001},"clouds":{"all":92},"weather":[{"id":500,"main":"Rain","description":"light rain","icon":"10n"}],"rain":{"3h":2.69},"dt":1485717216},{"main":{"temp":282.597,"temp_min":282.597,"temp_max":282.597,"pressure":1012.12,"sea_level":1019.71,"grnd_level":1012.12,"humidity":98},"wind":{"speed":4.04,"deg":226},"clouds":{"all":92},"weather":[{"id":500,"main":"Rain","description":"light rain","icon":"10n"}],"rain":{"3h":0.405},"dt":1485745061},{"main":{"temp":279.38,"pressure":1011,"humidity":93,"temp_min":278.15,"temp_max":280.15},"wind":{"speed":2.6,"deg":30},"clouds":{"all":90},"weather":[{"id":701,"main":"Mist","description":"mist","icon":"50d"},{"id":741,"main":"Fog","description":"fog","icon":"50d"}],"dt":1485768552}]}
+
+00:26:13.754 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate - [print] {
+  "calctime": 0.0875,
+  "cnt": 3,
+  "cod": "200",
+  "message": "",
+  "list": [
+    {
+      "dt": 1485717216,
+      "rain": {
+        "3h": 2.69
+      },
+      "weather": [
+        {
+          "icon": "10n",
+          "description": "light rain",
+          "main": "Rain",
+          "id": 500
+        }
+      ],
+      "main": {
+        "temp": 279.946,
+        "temp_min": 279.946,
+        "grnd_level": 1016.76,
+        "humidity": 100,
+        "pressure": 1016.76,
+        "sea_level": 1024.45,
+        "temp_max": 279.946
+      },
+      "clouds": {
+        "all": 92
+      },
+      "wind": {
+        "deg": 163.001,
+        "speed": 4.59
+      }
+    },
+    {
+      "dt": 1485745061,
+      "rain": {
+        "3h": 0.405
+      },
+      "weather": [
+        {
+          "icon": "10n",
+          "description": "light rain",
+          "main": "Rain",
+          "id": 500
+        }
+      ],
+      "main": {
+        "temp": 282.597,
+        "temp_min": 282.597,
+        "grnd_level": 1012.12,
+        "humidity": 98,
+        "pressure": 1012.12,
+        "sea_level": 1019.71,
+        "temp_max": 282.597
+      },
+      "clouds": {
+        "all": 92
+      },
+      "wind": {
+        "deg": 226,
+        "speed": 4.04
+      }
+    },
+    {
+      "dt": 1485768552,
+      "weather": [
+        {
+          "icon": "50d",
+          "description": "mist",
+          "main": "Mist",
+          "id": 701
+        },
+        {
+          "icon": "50d",
+          "description": "fog",
+          "main": "Fog",
+          "id": 741
+        }
+      ],
+      "main": {
+        "temp": 279.38,
+        "temp_min": 278.15,
+        "humidity": 93,
+        "pressure": 1011,
+        "temp_max": 280.15
+      },
+      "clouds": {
+        "all": 90
+      },
+      "wind": {
+        "deg": 30,
+        "speed": 2.6
+      }
+    }
+  ],
+  "city_id": 2643743
+}
+
+00:26:13.877 [pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 1 of 1: classpath:interactions/api/weather.feature
+00:26:15.348 [main] DEBUG com.intuit.karate - request:
+1 > GET https://samples.openweathermap.org/data/2.5/history/city?q=London%2CUK&appid=appid
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: samples.openweathermap.org
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_191)
+
+00:26:16.434 [main] DEBUG com.intuit.karate - response time in milliseconds: 1080.66
+1 < 200
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 07 Sep 2020 18:56:15 GMT
+1 < ETag: W/"a05a608676943f92506d1d6efab3d72e"
+1 < Server: openresty/1.9.7.1
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Request-Id: f9560ba3-1f6a-471e-aeed-88d49f4b84c5
+1 < X-Runtime: 0.001367
+1 < X-XSS-Protection: 1; mode=block
+{"message":"","cod":"200","city_id":2643743,"calctime":0.0875,"cnt":3,"list":[{"main":{"temp":279.946,"temp_min":279.946,"temp_max":279.946,"pressure":1016.76,"sea_level":1024.45,"grnd_level":1016.76,"humidity":100},"wind":{"speed":4.59,"deg":163.001},"clouds":{"all":92},"weather":[{"id":500,"main":"Rain","description":"light rain","icon":"10n"}],"rain":{"3h":2.69},"dt":1485717216},{"main":{"temp":282.597,"temp_min":282.597,"temp_max":282.597,"pressure":1012.12,"sea_level":1019.71,"grnd_level":1012.12,"humidity":98},"wind":{"speed":4.04,"deg":226},"clouds":{"all":92},"weather":[{"id":500,"main":"Rain","description":"light rain","icon":"10n"}],"rain":{"3h":0.405},"dt":1485745061},{"main":{"temp":279.38,"pressure":1011,"humidity":93,"temp_min":278.15,"temp_max":280.15},"wind":{"speed":2.6,"deg":30},"clouds":{"all":90},"weather":[{"id":701,"main":"Mist","description":"mist","icon":"50d"},{"id":741,"main":"Fog","description":"fog","icon":"50d"}],"dt":1485768552}]}
+
+00:26:16.438 [main] INFO  com.intuit.karate - [print] {
+  "calctime": 0.0875,
+  "cnt": 3,
+  "cod": "200",
+  "message": "",
+  "list": [
+    {
+      "dt": 1485717216,
+      "rain": {
+        "3h": 2.69
+      },
+      "weather": [
+        {
+          "icon": "10n",
+          "description": "light rain",
+          "main": "Rain",
+          "id": 500
+        }
+      ],
+      "main": {
+        "temp": 279.946,
+        "temp_min": 279.946,
+        "grnd_level": 1016.76,
+        "humidity": 100,
+        "pressure": 1016.76,
+        "sea_level": 1024.45,
+        "temp_max": 279.946
+      },
+      "clouds": {
+        "all": 92
+      },
+      "wind": {
+        "deg": 163.001,
+        "speed": 4.59
+      }
+    },
+    {
+      "dt": 1485745061,
+      "rain": {
+        "3h": 0.405
+      },
+      "weather": [
+        {
+          "icon": "10n",
+          "description": "light rain",
+          "main": "Rain",
+          "id": 500
+        }
+      ],
+      "main": {
+        "temp": 282.597,
+        "temp_min": 282.597,
+        "grnd_level": 1012.12,
+        "humidity": 98,
+        "pressure": 1012.12,
+        "sea_level": 1019.71,
+        "temp_max": 282.597
+      },
+      "clouds": {
+        "all": 92
+      },
+      "wind": {
+        "deg": 226,
+        "speed": 4.04
+      }
+    },
+    {
+      "dt": 1485768552,
+      "weather": [
+        {
+          "icon": "50d",
+          "description": "mist",
+          "main": "Mist",
+          "id": 701
+        },
+        {
+          "icon": "50d",
+          "description": "fog",
+          "main": "Fog",
+          "id": 741
+        }
+      ],
+      "main": {
+        "temp": 279.38,
+        "temp_min": 278.15,
+        "humidity": 93,
+        "pressure": 1011,
+        "temp_max": 280.15
+      },
+      "clouds": {
+        "all": 90
+      },
+      "wind": {
+        "deg": 30,
+        "speed": 2.6
+      }
+    }
+  ],
+  "city_id": 2643743
+}
+

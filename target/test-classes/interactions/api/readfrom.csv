@@ -1,0 +1,4 @@
+main/temp,main/temp_min,main/temp_max,main/pressure,main/sea_level,main/grnd_level,main/humidity,wind/speed,wind/deg,clouds/all,weather/0/id,weather/0/main,weather/0/description,weather/0/icon,rain/3h,dt,weather/1/id,weather/1/main,weather/1/description,weather/1/icon
+279.946,279.946,279.946,1016.76,1024.45,1016.76,100,4.59,163.001,92,500,Rain,light rain,10n,2.69,1485717216,,,,
+282.597,282.597,282.597,1012.12,1019.71,1012.12,98,4.04,226,92,500,Rain,light rain,10n,0.405,1485745061,,,,
+279.38,278.15,280.15,1011,,,93,2.6,30,90,701,Mist,mist,50d,,1485768552,741,Fog,fog,50d

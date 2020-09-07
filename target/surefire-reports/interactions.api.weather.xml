@@ -1,0 +1,42 @@
+<testsuite failures="0" name="interactions/api/weather.feature" skipped="0" tests="1" time="2.580297">
+  <testcase classname="interactions.api.weather" name="To verify the GET service API is returning 200 response" time="2.580297">
+    <system-out>* url apiBaseURL .......................................................... passed
+* def jsonFromCsv = read('interactions/api/readfrom.csv') ................. passed
+* def temp0 = jsonFromCsv[0]["main/temp"] ................................. passed
+* def temp1 = jsonFromCsv[1]["main/temp"] ................................. passed
+* def temp2 = jsonFromCsv[2]["main/temp"] ................................. passed
+* def tempmin0 = jsonFromCsv[0]["main/temp_min"] .......................... passed
+* def tempmin1 = jsonFromCsv[1]["main/temp_min"] .......................... passed
+* def tempmin2 = jsonFromCsv[2]["main/temp_min"] .......................... passed
+* def tempmax0 = jsonFromCsv[0]["main/temp_max"] .......................... passed
+* def tempmax1 = jsonFromCsv[1]["main/temp_max"] .......................... passed
+* def tempmax2 = jsonFromCsv[2]["main/temp_max"] .......................... passed
+* def pressure0 = jsonFromCsv[0]["main/pressure"] ......................... passed
+* def pressure1 = jsonFromCsv[1]["main/pressure"] ......................... passed
+* def pressure2 = jsonFromCsv[2]["main/pressure"] ......................... passed
+* def sealevel0 = jsonFromCsv[0]["main/sea_level"] ........................ passed
+* def sealevel1 = jsonFromCsv[1]["main/sea_level"] ........................ passed
+Given path apiPathURL ..................................................... passed
+And param q = city ........................................................ passed
+And param appid = applicationid ........................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+Then print response ....................................................... passed
+* match temp0 == response.list[0].main.temp ............................... passed
+* match temp1 == response.list[1].main.temp ............................... passed
+* match temp2 == response.list[2].main.temp ............................... passed
+* match tempmin0 == response.list[0].main.temp_min ........................ passed
+* match tempmin1 == response.list[1].main.temp_min ........................ passed
+* match tempmin2 == response.list[2].main.temp_min ........................ passed
+* match tempmax0 == response.list[0].main.temp_max ........................ passed
+* match tempmax1 == response.list[1].main.temp_max ........................ passed
+* match tempmax2 == response.list[2].main.temp_max ........................ passed
+* match pressure0 == response.list[0].main.pressure ....................... passed
+* match pressure1 == response.list[1].main.pressure ....................... passed
+* match pressure2 == response.list[2].main.pressure ....................... passed
+* match sealevel0 == response.list[0].main.sea_level ...................... passed
+* match sealevel1 == response.list[1].main.sea_level ...................... passed
+* table output ............................................................ passed
+* karate.write(output,'examples/users/readto.csv') ........................ passed</system-out>
+  </testcase>
+</testsuite>
